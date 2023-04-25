@@ -3,7 +3,7 @@ Questa repository contiene un programma scritto in PHP che simula la gestione di
 
 Il programma, tramite un'interfaccia grafica intuitiva, permette di effettuare diverse operazioni dopo che l'utente viene autenticato, tra cui:
 - la registrazione, la modifica e la cancellazione degli utenti;
-- la visualizzazione degli gli utenti presenti nell'anagrafica utilizzando diversi filtri per selezionare solo quelli desiderati;
+- la visualizzazione degli utenti presenti nell'anagrafica utilizzando diversi filtri per selezionare solo quelli desiderati;
 - la possibilità di caricare un file txt precompilato che andrà a sostituire l'anagrafica attualmente salvata.
 
 Il programma, inoltre, è in grado di gestire le concorrenze dell'accesso al file, eventuali omonimie, e altre piccolezze come la ricerca case-insensitive e i controlli di autenticazione prima di accedere alla pagina della dashboard.
