@@ -60,16 +60,14 @@ if (isset($_POST['stampa_eta'])) {
     foreach ($users as $user) {
         // divido la stringa in un array di stringhe (ognuna delle quali è un dato dell'utente)
         $user = explode(";", $user);
-        // divido ulteriormente la data di nascita (che è in indice 3) in un array di stringhe (ognuna delle quali è un dato della data di nascita) --> [0] = anno, [1] = mese, [2] = giorno
-        $birth = explode("-", $user[3]);
-        // prendo solo l'anno, che è in indice 0
-        $birth = $birth[0];
-        // prendo l'anno corrente
-        $current = date("Y");
-        // l'eta è ottenuta dalla differenza tra l'anno corrente e l'anno di nascita (facendo un cast esplicito a int dato che sono stringhe)
-        $age = (int) $current - (int) $birth;
-        // controllo se l'età inserita è uguale all'età dell'utente corrente
-        if ($age_query == $age) {
+        // prendo la data di nascita
+        $birth=$user[3];
+        // prendo la data corrente
+        $current = date("Y-m-d");
+        // calcolo la differenza tra le due date
+        $diff = date_diff(date_create($birth), date_create($current));
+        // controllo se l'anno calcolato è uguale a quello di ricerca
+        if ($diff->format('%y') == $age_query) {
             $count++;
             echo "<br><b>Nome: </b>" . $user[0] . "<br><b>Cognome: </b>" . $user[1] . "<br><b>Sesso: </b>" . $user[2] . "<br><b>Data di nascita: </b>" . $user[3] . "<br><b>Comune di residenza: </b>" . $user[4] . "<br><b>Telefono: </b>" . $user[5] . "<br>";
             $found = true;
