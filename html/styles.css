@@ -1,0 +1,91 @@
+* {
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    padding: 1rem;
+    background-color: #f1f1f1;
+}
+
+.login-box {
+    margin: auto;
+    width: 50%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background-color: white;
+    width: 270px;
+    border-radius: 20px;
+    padding: 1rem 3rem 3rem 3rem;
+}
+
+.login-btn {
+    text-decoration: none;
+    border: none;
+    background-color: #3179fb;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    width: 265px;
+    font-weight: bold;
+}
+
+.welcome {
+    margin-bottom: 1rem;
+}
+
+.logout-btn {
+    background-color: rgb(255, 92, 92) !important;
+    width: 100px !important;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background-color: white;
+    width: 270px;
+    border-radius: 10px;
+    margin: 1rem 2rem 1rem 0;
+    padding: 1.5rem;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #3179fb;
+}
+
+input[type="text"], input[type="password"], input[type="number"], input[type="date"], input[type="file"], select {
+    padding: 0.4rem;
+    border-radius: 8px;
+    border: 1px solid #d5d5d7;
+    width: 265px;
+    margin-top: .3rem;
+}
+
+input[type="submit"], input[type="button"] {
+    text-decoration: none;
+    border: none;
+    background-color: #3179fb;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    width: 265px;
+    margin-top: .5rem;
+    font-weight: bold;
+}
+
+input:focus {
+    outline-color: #3179fb;
+}
+
+.logout-btn:hover {
+    background-color: red !important;
+}
+
+.login-btn:hover, input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: #1951d4;
+}
