@@ -10,7 +10,7 @@
             Password<br><input type="password" name="password" required> <br><br>
             <input type="submit" name="register" value="Registrati"><br>
             <div style="text-align: center;">
-                <br><br>Hai già un account? <a href="../html/index.html">Accedi</a>
+                <br><br>Hai già un account? <a href="../html/login.html">Accedi</a>
             </div>
         </div>
     </form>
@@ -51,7 +51,7 @@ if (isset($_POST['register'])) {
         fwrite($file, ");\n?>");
         fclose($file);
 
-        header('Location: ../html/index.html');
+        header('Location: ../html/login.html');
     }
 }
 ?>

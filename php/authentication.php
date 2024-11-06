@@ -11,7 +11,7 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
 } else {
     echo "<h1>Utente non autorizzato</h1>";
     echo "<p>Esegui il login per accedere a questa pagina</p><br>";
-    echo "<a href='../html/index.html' class='login-btn'>Login</a>";
+    echo "<a href='../html/login.html' class='login-btn'>Login</a>";
     exit;
 }
 
@@ -29,6 +29,6 @@ foreach ($utenti as $key => $value) {
 if ($auth) header("Location: dashboard.php");
 else {
     echo "<br><h2>Le credenziali sono errate</h2><br>";
-    echo "<a href='../html/index.html' class='login-btn'>Ripeti login</a>";
+    echo "<a href='../html/login.html' class='login-btn'>Ripeti login</a>";
 }
 ?>

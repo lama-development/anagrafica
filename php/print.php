@@ -10,7 +10,7 @@ if (!isset($_SESSION['username'])) {
     echo "<div style='text-align: center'>";
     echo "<h1>Utente non autorizzato</h1>";
     echo "<p>Esegui il login per accedere a questa pagina</p><br>";
-    echo "<a href='../html/index.html' class='login-btn'>Login</a>";
+    echo "<a href='../html/login.html' class='login-btn'>Login</a>";
     echo "</div>";
     exit;
 }
