@@ -12,7 +12,7 @@ if (isset($_SESSION['username'])) {
         // se l'utente ha cliccato sul pulsante di logout, distruggo la sessione e lo reindirizzo alla pagina di login
         if (isset($_POST['logout'])) {
             session_destroy();
-            header("Location: ../html/login.html");
+            header("Location: ../html/index.html");
         }
     }
 } else {
@@ -20,7 +20,7 @@ if (isset($_SESSION['username'])) {
     echo "<html style='text-align: center'></html><link rel='stylesheet' type='text/css' href='../html/styles.css'></html>";
     echo "<h1>Utente non autorizzato</h1>";
     echo "<p>Esegui il login per accedere a questa pagina</p><br>";
-    echo "<a href='../html/login.html' class='login-btn'>Login</a>";
+    echo "<a href='../html/index.html' class='login-btn'>Login</a>";
     echo "</html>";
     exit;
 }
